@@ -1,0 +1,26 @@
+<h1>Users</h1>
+<button><a href="/user/add">Add</a></button>
+<table>
+    <thead>
+
+    </thead>
+    <tbody>
+        <tr>
+            <th>Id</th>
+            <th>name</th>
+            <th>Age</th>
+            <th>control</th>
+        </tr>
+        {{#data}}
+        <tr>
+           <td>{{id}}</td>    
+        <td>{{name}}</td>
+        <td>{{age}}</td>
+       <td> <button><a href="/user/update/{{id}}">Update</a></button> 
+      <button> <a href="/user/delete/{{id}}">Delete</a></button>
+        </td>
+            
+        </tr>
+        {{/data}}
+    </tbody>
+</table>
